@@ -1,8 +1,14 @@
 import React from "react";
 
 const seasonConfig = {
-  summer: {},
-  winter: {},
+  summer: {
+    text: "HIT THE BEACH, B!",
+    iconName: "sun",
+  },
+  winter: {
+    text: "Chillllllllyyyyyy!!!!",
+    iconName: "snowflake",
+  },
 };
 
 const getSeason = (lat, month) => {
