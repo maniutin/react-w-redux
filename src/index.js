@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import SeasonsDisplay from "./SeasonsDisplay";
+import Spinner from "./Spinner";
 
 if (module.hot) {
   module.hot.accept();
@@ -32,7 +33,7 @@ class App extends React.Component {
       return <SeasonsDisplay lat={this.state.lat} />;
     }
 
-    return <div>Loading...</div>;
+    return <Spinner />;
   }
 }
 
